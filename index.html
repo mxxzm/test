@@ -3,7 +3,7 @@
 <script>
 async function go() {
   try {
-    const r = await fetch("http://127.0.0.1:8765/");
+    const r = await fetch("https://localhost:8765/");
     o.textContent = await r.text();
   } catch (e) {
     o.textContent = "Failed: " + e;
